@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oluwafemi Oderinwale — Software Engineer</title>
+<meta name="description" content="Fullstack software engineer building scalable systems and APIs. Node.js, NestJS, PHP, React, and Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f172a;--surface:#111827;--on:#e2e8f0;--primary:#eab308;--accent:#14b8a6;--tert:#94a3b8;--neutral:#64748b;--border:#334155;--card-border:#1e293b;
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Times New Roman",Times,serif;
+  color-scheme:dark;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tert);font:400 16px/26px var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--on);text-decoration:none}
+a:hover{color:var(--accent)}
+:focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px}
+header{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding:96px 0}
+h1{margin:0;font:700 48px/48px var(--sans);letter-spacing:-1.2px;color:var(--on)}
+.role{margin:12px 0 0;font:500 20px/28px var(--sans);color:var(--on)}
+.lede{margin:20px 0 0;max-width:20rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-width:181px;min-height:44px;padding:12px 16px;border-radius:4px;font:700 14px/20px var(--serif);background:var(--primary);color:#0f172a;margin-top:28px}
+.btn:hover{color:#0f172a;background:#facc15}
+nav ul{list-style:none;margin:48px 0 0;padding:0}
+nav a{display:flex;align-items:center;gap:16px;padding:6px 0;font:500 12px/18px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--neutral)}
+nav a::before{content:"";width:32px;height:1px;background:var(--neutral);transition:width .2s,background .2s}
+nav a:hover,nav a.on{color:var(--on)}
+nav a:hover::before,nav a.on::before{width:64px;background:var(--on)}
+.social{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+.social a{color:var(--tert);display:block}
+.social a:hover{color:var(--on)}
+.social svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+main{padding:96px 0}
+section{margin-bottom:96px;scroll-margin-top:48px}
+section:last-of-type{margin-bottom:48px}
+.label{display:none;font:700 12px/18px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--on);margin:0 0 20px}
+p{margin:0 0 16px}
+strong{color:var(--on);font-weight:500}
+.item{display:grid;grid-template-columns:136px 1fr;gap:20px;padding:12px 16px;margin:0 -16px 24px;border-radius:8px}
+.item:hover{background:var(--surface)}
+.date{font:500 12px/22px var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--neutral);padding-top:3px}
+h3{margin:0 0 8px;font:500 16px/22px var(--sans);color:var(--on)}
+h3 a::after{content:" ↗";font-size:13px;color:var(--tert)}
+h3 .co{color:var(--tert);font-weight:400}
+.item p{font-size:14px;line-height:22px;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{padding:3px 12px;border-radius:9999px;background:rgba(20,184,166,.1);color:var(--accent);font:500 12px/18px var(--sans)}
+.skills{display:grid;gap:20px}
+.skills h3{font-size:14px;color:var(--tert);margin-bottom:8px}
+.plain{grid-template-columns:136px 1fr}
+.plain h3{margin:0}
+.plain .meta{font-size:14px;line-height:22px;margin:0}
+.proj{grid-template-columns:1fr}
+.proj p{margin-bottom:12px}
+footer{font-size:13px;line-height:20px;color:var(--neutral);max-width:28rem}
+@media (max-width:1023px){
+  .wrap{grid-template-columns:1fr;gap:0;padding:0 24px}
+  header{position:static;height:auto;padding:64px 0 0}
+  nav{display:none}
+  .social{margin-top:32px}
+  main{padding:64px 0}
+  section{margin-bottom:64px}
+  .label{display:block}
+}
+@media (max-width:560px){
+  h1{font-size:40px;line-height:42px}
+  .item,.plain{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>Oluwafemi Oderinwale</h1>
+    <p class="role">Software Engineer</p>
+    <p class="lede">I build fullstack products and the APIs behind them, from payments to data tools. Based in Lagos, Nigeria.</p>
+    <a class="btn" href="mailto:oderinwalefemi150@gmail.com">Email me</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about" class="on">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+  </div>
+  <ul class="social" aria-label="Links">
+    <li><a href="https://github.com/femilabi" aria-label="GitHub" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+    <li><a href="https://linkedin.com/in/oderinwale-oluwafemi" aria-label="LinkedIn" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+    <li><a href="mailto:oderinwalefemi150@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a></li>
+  </ul>
+</header>
+
+<main>
+<section id="about">
+  <h2 class="label">About</h2>
+  <p>I’m a software engineer with seven years of fullstack experience building scalable systems across fintech, government, and startups. I work mostly in <strong>Node.js</strong> (Express.js, NestJS) and <strong>PHP</strong>, designing REST APIs, optimizing databases and queries, and integrating payments.</p>
+  <p>I started out building backends for local businesses and government portals, then moved into leading a cross-functional team from concept to a production launch. I own the architecture, and I use AI-assisted development and review to move faster without lowering the bar on code quality.</p>
+  <p>These days I also use Python for data wrangling and analysis, and I’m learning modern front-end development with React and Next.js through an internship at DataThink.</p>
+</section>
+
+<section id="experience">
+  <h2 class="label">Experience</h2>
+  <div class="item">
+    <div class="date">Aug 2026 — Present</div>
+    <div>
+      <h3>Web Development Intern <span class="co">· DataThink, Idaho, USA</span></h3>
+      <p>Building responsive interfaces with HTML, CSS, Tailwind CSS, JavaScript, React, and Next.js. Producing data-visualization case studies in Python, from housing-market trends to interactive maps, as marimo notebooks exported to shareable HTML reports.</p>
+      <ul class="tags"><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>JavaScript</li><li>Python</li><li>Polars</li><li>Plotly</li><li>marimo</li></ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="date">Aug 2025 — Nov 2026</div>
+    <div>
+      <h3>Backend Developer <span class="co">· The Watchtower, Abu Dhabi, UAE</span></h3>
+      <p>Designed and implemented scalable RESTful APIs in PHP and MySQL for high-traffic applications, improving request handling performance by over 30%. Profiled and optimized slow queries and bottlenecks, and worked with cross-functional teams to turn business requirements into maintainable solutions.</p>
+      <ul class="tags"><li>PHP</li><li>MySQL</li><li>REST APIs</li><li>Query optimization</li></ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="date">Mar 2022 — Mar 2025</div>
+    <div>
+      <h3>Technical Lead <span class="co">· Yung Jimmy Technology Ltd., Lagos, Nigeria</span></h3>
+      <p>Led product development from concept to a production-ready MVP delivered on schedule, personally building the core backend APIs while overseeing the frontend and UI/UX teams. Defined timelines, milestones, and delivery plans, and owned key architectural decisions that balanced delivery speed against scalability.</p>
+      <ul class="tags"><li>System design</li><li>REST APIs</li><li>Team leadership</li><li>Security</li></ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="date">Mar 2021 — Jan 2022</div>
+    <div>
+      <h3><a href="https://primesavings.com.ng" rel="noopener">Fullstack Developer <span class="co">· Prime Savings &amp; Cooperative, Ibadan, Nigeria</span></a></h3>
+      <p>Designed and built both the frontend and the backend logic for a production fintech savings app. Integrated Paystack card payments and Monnify virtual accounts, built automated periodic savings debits, and added security controls against double-spending and zero-balance exploits.</p>
+      <ul class="tags"><li>Paystack</li><li>Monnify</li><li>Fintech</li><li>Automation</li></ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="date">Feb 2019 — Mar 2021</div>
+    <div>
+      <h3>Backend Developer <span class="co">· Mycyber Media Solutions, Ibadan, Nigeria</span></h3>
+      <p>Delivered backends for internal and client projects, including the Oyo State Government Job Portal used across multiple MDAs and a peer-to-peer cryptocurrency exchange with its own coin nodes. Integrated video conferencing into Canund, a Canadian social media app, handled data migrations and mobile app support, and wrote automation scripts to cut manual work.</p>
+      <ul class="tags"><li>Cryptocurrency</li><li>Data migration</li><li>Video conferencing</li><li>Automation</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="label">Projects</h2>
+  <div class="item proj">
+    <div>
+      <h3><a href="https://yiksi.com" rel="noopener">Yiksi</a></h3>
+      <p>A crypto platform presented as a gateway to the crypto world, built as a JavaScript web app.</p>
+      <ul class="tags"><li>Crypto</li><li>Web app</li></ul>
+    </div>
+  </div>
+  <div class="item proj">
+    <div>
+      <h3><a href="https://mycybersms.com" rel="noopener">MyCyberSMS</a></h3>
+      <p>A bulk SMS platform for businesses with two-way messaging, an SMS gateway and API for developers, and mobile apps.</p>
+      <ul class="tags"><li>SMS gateway</li><li>API</li><li>Mobile</li></ul>
+    </div>
+  </div>
+  <div class="item proj">
+    <div>
+      <h3><a href="https://primesavings.com.ng" rel="noopener">Prime Savings &amp; Cooperative</a></h3>
+      <p>Fintech savings and cooperative platform with automated debits, card payments, and virtual accounts.</p>
+      <ul class="tags"><li>Paystack</li><li>Monnify</li><li>Fintech</li></ul>
+    </div>
+  </div>
+  <div class="item proj">
+    <div>
+      <h3><a href="https://alopelpharm.com.ng" rel="noopener">Alopel Pharmacy Inventory &amp; E-Commerce</a></h3>
+      <p>Inventory management and an online storefront for a pharmacy, covering stock control and customer ordering.</p>
+      <ul class="tags"><li>E-commerce</li><li>Inventory</li></ul>
+    </div>
+  </div>
+  <div class="item proj">
+    <div>
+      <h3><a href="https://dalukwa.com" rel="noopener">Dalukwa</a></h3>
+      <p>A peer-to-peer betting platform handling user matching, wallet balances, and settlement logic.</p>
+      <ul class="tags"><li>Wallets</li><li>Matching</li><li>Settlement</li></ul>
+    </div>
+  </div>
+  <div class="item proj">
+    <div>
+      <h3>Oyo State Job Portal</h3>
+      <p>Government recruitment portal serving multiple Oyo State MDAs, built to handle high-volume applicant intake.</p>
+      <ul class="tags"><li>Government</li><li>Recruitment</li></ul>
+    </div>
+  </div>
+  <div class="item proj">
+    <div>
+      <h3>Pemisire Cooperative Financial Management System</h3>
+      <p>Financial management system for a cooperative society, covering member contributions, loans, and reporting.</p>
+      <ul class="tags"><li>Fintech</li><li>Reporting</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="label">Skills</h2>
+  <div class="skills">
+    <div><h3>Languages &amp; frameworks</h3><ul class="tags"><li>JavaScript</li><li>Node.js</li><li>Express.js</li><li>NestJS</li><li>PHP</li><li>React.js</li><li>Next.js</li><li>HTML</li><li>CSS</li><li>Solidity</li></ul></div>
+    <div><h3>Data wrangling &amp; analysis</h3><ul class="tags"><li>Python</li><li>pandas</li><li>Polars</li><li>Plotly</li><li>lets-plot</li><li>folium</li><li>marimo</li></ul></div>
+    <div><h3>Databases</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li></ul></div>
+    <div><h3>Infrastructure &amp; tools</h3><ul class="tags"><li>DigitalOcean</li><li>Heroku</li><li>Docker</li><li>Git</li></ul></div>
+    <div><h3>AI-assisted development</h3><ul class="tags"><li>Claude Code</li><li>Google Gemini</li><li>AI-assisted review</li><li>Prompt engineering</li><li>Test writing</li></ul></div>
+    <div><h3>Specialisms</h3><ul class="tags"><li>System design</li><li>REST API design</li><li>Database optimization</li><li>Application security</li><li>Web3 and smart contracts</li></ul></div>
+  </div>
+</section>
+
+<section id="training">
+  <h2 class="label">Certifications &amp; training</h2>
+  <div class="item plain"><div class="date">Mar — Jul 2026</div><div><h3>Introduction to Data Science</h3><p class="meta">DataThink</p></div></div>
+  <div class="item plain"><div class="date">Mar 2025</div><div><h3>Blockchain &amp; Smart Contract Development</h3><p class="meta">Alchemy University</p></div></div>
+  <div class="item plain"><div class="date">Dec 2019</div><div><h3>Fullstack Development</h3><p class="meta">W3Schools</p></div></div>
+  <div class="item plain"><div class="date">Feb 2019</div><div><h3>PHP Intermediate to Senior</h3><p class="meta">TheNewBoston</p></div></div>
+</section>
+
+<section id="education">
+  <h2 class="label">Education</h2>
+  <div class="item plain"><div class="date">Aug 2026 — Present</div><div><h3>BYU-PathwayConnect</h3><p class="meta">Student</p></div></div>
+  <div class="item plain"><div class="date">Dec 2016 — Dec 2018</div><div><h3>National Diploma (OND)</h3><p class="meta">The Polytechnic, Ibadan, Oyo State, Nigeria. CGPA 3.33 / 5.00</p></div></div>
+</section>
+
+<footer>Designed and built by Oluwafemi Oderinwale. Set in Inter.</footer>
+</main>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll("nav a"));
+  var map={};links.forEach(function(a){map[a.getAttribute("href").slice(1)]=a});
+  if(!("IntersectionObserver" in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(a){a.classList.remove("on")});var a=map[e.target.id];if(a)a.classList.add("on")}
+    });
+  },{rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll("main section").forEach(function(s){io.observe(s)});
+})();
+</script>
+</body>
+</html>
