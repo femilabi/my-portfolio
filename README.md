@@ -13,10 +13,6 @@ I build fullstack products and the APIs behind them, from payments to data tools
 - [Training](#training)
 - [Education](#education)
 
-- 
-- 
-- 
-
 ## About
 
 I’m a software engineer with seven years of fullstack experience building scalable systems across fintech, government, and startups. I work mostly in **Node.js** (Express.js, NestJS) and **PHP**, designing REST APIs, optimizing databases and queries, and integrating payments.
@@ -87,6 +83,7 @@ Delivered backends for internal and client projects, including the Oyo State Gov
 - Automation
 
 ## Projects
+
 ### Selected GitHub projects
 
 - [Expense Tracker](https://github.com/femilabi/expense-tracker) — A full-stack expense-tracking application built with Next.js, TypeScript, Prisma, MariaDB, and NextAuth. Includes charts, linting, and a Vitest test setup.
